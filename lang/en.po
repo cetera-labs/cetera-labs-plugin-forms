@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Модуль \"Конструктор форм\"\n"
+"POT-Creation-Date: 2018-01-05 18:15+0300\n"
+"PO-Revision-Date: 2018-01-05 18:16+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _;translate\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config.php:14 ext/Widget.js:14
+msgid "Веб форма"
+msgstr "Web form"
+
+#: config.php:23
+msgid "Конструктор форм"
+msgstr "Form Builder"
+
+#: ext/Edit.js:5
+msgid "Создание нового поля веб-формы"
+msgstr "Сreate a new field for web forms"
+
+#: ext/Edit.js:34
+msgid "Название поля"
+msgstr "Field name"
+
+#: ext/Edit.js:42
+msgid "Тип поля"
+msgstr "Field type"
+
+#: ext/Edit.js:43
+msgid "Обязательное"
+msgstr "Required"
+
+#: ext/Edit.js:51
+msgid "Варианты значений (каждое значение на новой строке)"
+msgstr "Options values (each value on a new line)"
+
+#: ext/Edit.js:59
+msgid "Html-код внутри кнопки (использовать двойные кавычки)"
+msgstr "HTML inside buttons (use double quotes)"
+
+#: ext/Edit.js:65
+msgid "Надпись на кнопке"
+msgstr "Button Label"
+
+#: ext/Edit.js:72
+msgid "CSS класс"
+msgstr "CSS class"
+
+#: ext/Edit.js:79
+msgid "Плейсхолдер"
+msgstr "Placeholder"
+
+#: ext/Edit.js:159
+msgid "Создать форму"
+msgstr "New web form"
+
+#: ext/Edit.js:160
+msgid "Редактировать форму"
+msgstr "Edit web form"
+
+#: ext/Edit.js:198
+msgid "Шаблон формы"
+msgstr "Web form template"
+
+#: ext/Edit.js:313
+msgid "Использование CAPTCHA для площадки fastsite обязательно!"
+msgstr "Using CAPTCHA for a fastsite site is a must!"
+
+#: ext/Edit.js:327
+msgid "Использовать Twig для шаблона"
+msgstr "Use Twig for template"
+
+#: ext/Edit.js:331
+msgid "Письмо"
+msgstr "Mail"
+
+#: ext/Edit.js:338 ext/Edit.js:370
+msgid "Кому"
+msgstr "To"
+
+#: ext/Edit.js:341 ext/Edit.js:373
+msgid "От"
+msgstr "From"
+
+#: ext/Edit.js:344 ext/Edit.js:376 ext/Model.js:8 ext/Model.js:31
+msgid "Тема"
+msgstr "From"
+
+#: ext/Edit.js:349 ext/Edit.js:381
+msgid "Текст письма"
+msgstr "Text"
+
+#: ext/Edit.js:355 ext/Edit.js:387
+msgid "Отправлять файлы из формы во вложении"
+msgstr "Attach form files into mail"
+
+#: ext/Edit.js:359
+msgid "Вложения"
+msgstr "Attaches"
+
+#: ext/Edit.js:362
+msgid "Отправлять 2 письма"
+msgstr "Send 2 mails"
+
+#: ext/Edit.js:393
+msgid "Уведомления"
+msgstr "Notifications"
+
+#: ext/Edit.js:403
+msgid "Сообщение отправителя было успешно отправлено"
+msgstr "Message has been send"
+
+#: ext/Edit.js:406
+msgid "Сообщение отправить не удалось"
+msgstr "Error sending message"
+
+#: ext/Edit.js:409
+msgid "Ошибки заполнения"
+msgstr "Erorrs"
+
+#: ext/Edit.js:412
+msgid "Некоторое поле должно быть заполнено"
+msgstr "Some fields are required"
+
+#: ext/Edit.js:415
+msgid "Неверный код Captcha"
+msgstr "Wrong code"
+
+#: ext/List.js:52
+msgid "Изменить"
+msgstr "Edit"
+
+#: ext/Model.js:8
+msgid "Ваше имя (обязательно)"
+msgstr "Your name (required)"
+
+#: ext/Model.js:8
+msgid "Ваш e-mail (обязательно)"
+msgstr "Your email (required)"
+
+#: ext/Model.js:8 ext/Model.js:31 ext/Model.js:55
+msgid "Сообщение"
+msgstr "Mail"
+
+#: ext/Model.js:8
+msgid "Отправить"
+msgstr "Send"
+
+#: ext/Model.js:31 ext/Model.js:55
+msgid "Это сообщение отправлено с сайта"
+msgstr "This mail send from site"
+
+#: ext/Model.js:63 install.php:85
+msgid "Ваше сообщение было отправлено успешно. Спасибо."
+msgstr "Message has been send. Thank you."
+
+#: ext/Model.js:66 ext/Model.js:72 install.php:86
+msgid ""
+"Ошибка при отправке сообщения. Пожалуйста, попробуйте позже или обратитесь к "
+"администратору сайта."
+msgstr "Error sending message. Please try again or contact administrator."
+
+#: ext/Model.js:69 install.php:89
+msgid "Ошибки заполнения. Пожалуйста, проверьте все поля и отправьте снова."
+msgstr "Error seeding. Please check all fields and submit again."
+
+#: ext/Model.js:75
+msgid "Пожалуйста, примите условия для продолжения."
+msgstr "Please accept the terms to continue."
+
+#: ext/Model.js:78 install.php:88
+msgid "Пожалуйста, заполните обязательное поле."
+msgstr "Please fill in the required field."
+
+#: ext/Model.js:81 install.php:87
+msgid "Неверный код"
+msgstr "Wrong code"
+
+#: ext/Model.js:84
+msgid "Указано слишком много данных."
+msgstr "You specified too many data."
+
+#: ext/Model.js:87
+msgid "Указано слишком мало данных."
+msgstr "Provided too little data."
+
+#: ext/Model.js:90
+msgid "Формат даты некорректен."
+msgstr "The date format is incorrect."
+
+#: ext/Model.js:93
+msgid "Указана слишком ранняя дата."
+msgstr "The date specified was too early."
+
+#: ext/Model.js:96
+msgid "Указана слишком поздняя дата."
+msgstr "Specified later date."
+
+#: ext/Model.js:99
+msgid "Не удалось загрузить файл."
+msgstr "Failed to load file."
+
+#: ext/Model.js:102
+msgid "Этот тип файла не разрешен."
+msgstr "This file type is not allowed."
+
+#: ext/Model.js:105
+msgid "Этот файл слишком большой."
+msgstr "This file is too big."
+
+#: ext/Model.js:108
+msgid "Числовой формат некорректен."
+msgstr "The number format is incorrect."
+
+#: ext/Model.js:111
+msgid "Это число слишком мало."
+msgstr "The number is too small."
+
+#: ext/Model.js:114
+msgid "Это число слишком велико."
+msgstr "The number is too large."
+
+#: ext/Model.js:117
+msgid "Вы ввели некорректный ответ."
+msgstr "You entered an invalid answer."
+
+#: ext/Model.js:120
+msgid "Некорректный e-mail."
+msgstr "Invalid e-mail."
+
+#: ext/Model.js:123
+msgid "Некорректный URL."
+msgstr "Invalid URL."
+
+#: ext/Model.js:126
+msgid "Некорректный номер телефона."
+msgstr "Invalid phone number."
+
+#: install.php:34
+msgid "Мы на связи"
+msgstr "We in touch"
+
+#: install.php:41
+msgid "Ваше имя"
+msgstr "Name"
+
+#: install.php:45
+msgid "Поле обязательно для заполнения"
+msgstr "Field is required"
+
+#: install.php:54
+msgid "Введите ваш электронный адрес"
+msgstr "Enter a valid email."
+
+#: install.php:59
+msgid "Чем мы можем помочь"
+msgstr "How can we help"
+
+#: install.php:62
+msgid "Введите ваше сообщение"
+msgstr "Message"
+
+#: install.php:70
+msgid "Соглашаюсь на"
+msgstr "I agree"
+
+#: install.php:70
+msgid "обработку персональных данных"
+msgstr "for processing of personal data"
+
+#: install.php:75
+msgid "Отправить сообщение"
+msgstr "Send"
+
+#~ msgid "Загрузить из ZIP"
+#~ msgstr "Upload ZIP"
+
+#~ msgid "Галерея"
+#~ msgstr "Photogallery"
+
+#~ msgid "Ошибка при распаковке архива."
+#~ msgstr "Error while extracting archive."
+
+#~ msgid "Фотогалерея"
+#~ msgstr "Photogallery"
+
+#~ msgid "Редакторы фотогалерей"
+#~ msgstr "Gallery editors"
+
+#~ msgid "Фотогалереи"
+#~ msgstr "Photogalleries"
+
+#~ msgid "Акт."
+#~ msgstr "Active"
+
+#~ msgid "Сорт."
+#~ msgstr "Sort"
+
+#~ msgid "Активность"
+#~ msgstr "Active"
+
+#~ msgid "Новый способ доставки"
+#~ msgstr "New delivery"
+
+#~ msgid "Товары"
+#~ msgstr "Goods"
+
+#~ msgid "Управление магазином"
+#~ msgstr "Sale management"
+
+#~ msgid "Магазин"
+#~ msgstr "Shop"
+
+#~ msgid "Заказы"
+#~ msgstr "Orders"
+
+#~ msgid "Способы доставки"
+#~ msgstr "Delivery methods"

@@ -1,0 +1,29 @@
+{
+    "name": "cetera-labs/plugin-forms",
+    "description": "Cetera CMS Web form builder Plugin",
+    "type": "cetera-cms-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Evgeniy Kuznecov",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "~6.1"
+    },
+    
+    "minimum-stability": "dev",
+    
+    "autoload": {
+        "psr-0": { 
+			"Forms\\": "classes/"
+		}
+    },
+
+    "extra": {
+        "name": "forms",
+        "title": "Web form builder",
+        "description": ""
+    }
+}

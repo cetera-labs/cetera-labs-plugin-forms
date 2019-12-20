@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<schema>
+
+<table name="forms">
+
+    <field name="id" type="int(10) unsigned" null="0" auto_increment="1" />
+    <field name="name" type="varchar(200)" null="0" />
+    <field name="template" type="text" null="1" />
+    
+    <field name="mailTo" type="varchar(200)" null="1" />
+    <field name="mailFrom" type="varchar(200)" null="1" />
+    <field name="mailSubject" type="varchar(200)" null="1" />
+    <field name="mailHeaders" type="text" null="1" />
+    <field name="mailBody" type="text" null="1" />
+    <field name="mailTmplAttachments" type="varchar(200)" null="1" />
+    <field name="mailAttachments" type="varchar(200)" null="1" />
+    <field name="mailHtml" type="tinyint(3) unsigned" null="0" default="0" />
+    
+    <field name="mail2" type="tinyint(3) unsigned" null="0" default="0" />
+    <field name="mail2To" type="varchar(200)" null="1" />
+    <field name="mail2From" type="varchar(200)" null="1" />
+    <field name="mail2Subject" type="varchar(200)" null="1" />
+    <field name="mail2Headers" type="text" null="1" />
+    <field name="mail2Body" type="text" null="1" />
+    <field name="mail2Attachments" type="varchar(200)" null="1" />
+    <field name="mail2Html" type="tinyint(3) unsigned" null="0" default="0" />
+    
+    <field name="msgSuccess" type="varchar(200)" null="1" />
+    <field name="msgFail" type="varchar(200)" null="1" />
+    <field name="msgError" type="varchar(200)" null="1" />
+    <field name="msgSpam" type="varchar(200)" null="1" />
+    <field name="msgConditions" type="varchar(200)" null="1" />
+    <field name="msgRequired" type="varchar(200)" null="1" />
+    <field name="msgTooBig" type="varchar(200)" null="1" />
+    <field name="msgTooSmall" type="varchar(200)" null="1" />
+    <field name="msgDateInvalid" type="varchar(200)" null="1" />
+    <field name="msgDateBig" type="varchar(200)" null="1" />
+    <field name="msgDateSmall" type="varchar(200)" null="1" />
+    <field name="msgFileFail" type="varchar(200)" null="1" />
+    <field name="msgFileDeny" type="varchar(200)" null="1" />
+    <field name="msgFileTooBig" type="varchar(200)" null="1" />
+    <field name="msgNumInvalid" type="varchar(200)" null="1" />
+    <field name="msgNumBig" type="varchar(200)" null="1" />
+    <field name="msgNumSmall" type="varchar(200)" null="1" />
+    <field name="msgAnswerInvalid" type="varchar(200)" null="1" />
+    <field name="msgEmailInvalid" type="varchar(200)" null="1" />
+    <field name="msgUrlInvalid" type="varchar(200)" null="1" />
+    <field name="msgPhoneInvalid" type="varchar(200)" null="1" />
+    <field name="msgCaptchaError" type="varchar(200)" null="1" />
+
+    <field name="useTwig" type="tinyint(3) unsigned" null="0" default="0" />
+    <field name="reCaptchaPublic" type="varchar(200)" null="1" />
+    <field name="reCaptchaPrivate" type="varchar(200)" null="1" />
+
+    <key name="PRIMARY" unique="1">
+        <column name="id" />
+    </key>
+    
+</table>
+
+<table name="forms_results">
+    <field name="id" type="int(10) unsigned" null="0" auto_increment="1" />
+    <field name="text" type="text" null="1" />
+
+    <key name="PRIMARY" unique="1">
+        <column name="id" />
+    </key>
+
+</table>
+
+<table name="forms_results_map">
+    <field name="form_id" type="int(10) unsigned" null="0" />
+    <field name="result_id" type="int(10)" null="0" />
+
+    <key name="PRIMARY" unique="1">
+        <column name="form_id" />
+        <column name="result_id" />
+    </key>
+</table>
+
+</schema>

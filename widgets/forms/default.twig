@@ -1,0 +1,4 @@
+<form id="form{{ widget.formID }}" method="post" enctype="multipart/form-data" action="#form{{ widget.formID }}">
+    <input type="hidden" name="webform" value="{{ widget.formID }}" />
+    {{ widget.formHTML|raw }}
+</form>
