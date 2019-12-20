@@ -466,9 +466,9 @@ Ext.define('Plugin.forms.Edit', {
                                         proxy: {
                                             type: 'ajax',
                                             api: {
-                                                read: '/cms/plugins/forms/data.php?action=results',
-                                                update: '/cms/plugins/forms/data.php?action=updateResult',
-                                                destroy: '/cms/plugins/forms/data.php?action=destroyResult'
+                                                read: '/cms/plugins/forms/scripts/data.php?action=results',
+                                                update: '/cms/plugins/forms/scripts/data.php?action=updateResult',
+                                                destroy: '/cms/plugins/forms/scripts/data.php?action=destroyResult'
                                             },
                                             reader: {
                                                 type: 'json',

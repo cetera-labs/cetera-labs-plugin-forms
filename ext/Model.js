@@ -136,10 +136,10 @@ Ext.define('Plugin.forms.Model', {
     proxy: {
 		    type: 'ajax',
         api: {
-            create  : '/cms/plugins/forms/data.php?action=create',
-            read    : '/cms/plugins/forms/data.php',
-            update  : '/cms/plugins/forms/data.php?action=update',
-            destroy : '/cms/plugins/forms/data.php?action=destroy'
+            create  : '/cms/plugins/forms/scripts/data.php?action=create',
+            read    : '/cms/plugins/forms/scripts/data.php',
+            update  : '/cms/plugins/forms/scripts/data.php?action=update',
+            destroy : '/cms/plugins/forms/scripts/data.php?action=destroy'
         },
         reader: {
 			      type: 'json',
@@ -159,10 +159,10 @@ Ext.define('Plugin.forms.ModelResult', {
     proxy: {
         type: 'ajax',
         api: {
-            create  : '/cms/plugins/forms/data.php?action=addResult',
-            read: '/cms/plugins/forms/data.php?action=results',
-            update: '/cms/plugins/forms/data.php?action=updateResult',
-            destroy: '/cms/plugins/forms/data.php?action=destroyResult'
+            create  : '/cms/plugins/forms/scripts/data.php?action=addResult',
+            read:     '/cms/plugins/forms/scripts/data.php?action=results',
+            update:   '/cms/plugins/forms/scripts/data.php?action=updateResult',
+            destroy:  '/cms/plugins/forms/scripts/data.php?action=destroyResult'
         },
         reader: {
             type: 'json',
