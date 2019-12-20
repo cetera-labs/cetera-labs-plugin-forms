@@ -442,7 +442,7 @@ class Form extends \Cetera\DbObject {
      */
     public static function sendMail($data, $mailHtml, $attachments = array())
     {
-        $mail = new \PHPMailer(true);
+        $mail = new \PHPMailer\PHPMailer\PHPMailer(true);
 		if ($mailHtml)
 			$mail->ContentType='text/html';
 		else $mail->ContentType='text/plain';
