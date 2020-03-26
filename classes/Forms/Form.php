@@ -181,7 +181,7 @@ class Form extends \Cetera\DbObject {
 
             case 'captchaimg':
             case 'captchastrongimg':
-                return '<img src="/cms/plugins/forms/captcha.php?f=' . self::$formID . '"' . $fieldProps . '/>';
+                return '<img src="/plugins/forms/scripts/captcha.php?f=' . self::$formID . '"' . $fieldProps . '/>';
 
             case 'captchainput':
                 return '<input type="text" name="captcha_code"' . $fieldProps . $fieldRequired . '/>';
