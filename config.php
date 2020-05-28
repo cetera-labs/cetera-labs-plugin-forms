@@ -12,7 +12,7 @@ $this->registerWidget(array(
     'name'     => 'forms',
     'class'    => '\\Forms\\Widget',
     'describ'  => $t->_('Веб форма'),
-    'icon'     => 'icon.png',
+    'icon'     => 'cms/plugins/forms/images/icon.png',
     'ui'       => 'Plugin.forms.Widget',
 ));
 
