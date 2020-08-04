@@ -447,12 +447,12 @@ class Form extends \Cetera\DbObject {
 			$mail->ContentType='text/html';
 		else $mail->ContentType='text/plain';
 
-        if(!empty($data['mailFromInfo'][1]) && !empty($data['mailFromInfo'][2]))
-        {
-            $mail->FromName = $data['mailFromInfo'][1];
-            $mail->From = $data['mailFromInfo'][2];
+        if(!empty($data['mailFromInfo'][1]) && !empty($data['mailFromInfo'][2])) {
+            $mail->setFrom($data['mailFromInfo'][2], $data['mailFromInfo'][1]);
         }
-        else $mail->FromName = $data['mailFrom'];
+        else {
+            $mail->setFrom($data['mailFrom']);
+        }
 
         $mail->CharSet = 'utf-8';
         $mail->Subject = $data['mailSubject'];
