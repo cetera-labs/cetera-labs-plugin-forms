@@ -192,7 +192,7 @@ class Form extends \Cetera\DbObject {
                     \Cetera\Application::getInstance()->addScript('https://www.google.com/recaptcha/api.js');
 
                     return '
-                        <script type="text/javascript">
+                        <script>
                             window.addEventListener("load", function (){
                                 var mysitekey = "' . self::$reCaptchaPublic . '";
                                 grecaptcha.render("recaptcha' . self::$formID . '", {
