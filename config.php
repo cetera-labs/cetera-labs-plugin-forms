@@ -22,6 +22,7 @@ if ( $this->getBo() && $this->getUser() && $this->getUser()->isAdmin() ) {
         'position' => MENU_SITE,
         'name' 	   => $t->_('Конструктор форм'),
         'icon'     => '/cms/plugins/forms/images/icon.png',
+        'iconCls'  => 'x-fa fa-pencil-alt',
         'class'    => 'Plugin.forms.List'
 	));
 
