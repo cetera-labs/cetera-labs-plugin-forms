@@ -471,7 +471,7 @@ class Form extends \Cetera\DbObject
 
                 return $form->msgSuccess;
 
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 return $form->msgFail;
             }
         }
