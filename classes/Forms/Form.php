@@ -129,6 +129,13 @@ class Form extends \Cetera\DbObject
                 }
                 return '<input type="tel" name="' . $fieldName . '"' . $fieldValue . $fieldProps . $fieldRequired . '/>';
 
+            case 'date':
+                if ($fieldValue != '') {
+                    $fieldValue = ' value="' . $_REQUEST[$fieldName] . '"';
+                }
+                return '<input type="date" name="' . $fieldName . '"' . $fieldValue . $fieldProps . $fieldRequired . '/>';
+
+
             case 'email':
                 if ($fieldValue != '') {
                     $fieldValue = ' value="' . $_REQUEST[$fieldName] . '"';

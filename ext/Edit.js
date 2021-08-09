@@ -231,6 +231,11 @@ Ext.define('Plugin.forms.Edit', {
                                             Ext.create('Plugin.forms.NewField',{fieldtype: 'email'}).show();
                                         }
                                     },{
+                                        text: 'Date',
+                                        handler: function() {
+                                            Ext.create('Plugin.forms.NewField',{fieldtype: 'date'}).show();
+                                        }
+                                    },{
                                         text: 'File',
                                         handler: function() {
                                             Ext.create('Plugin.forms.NewField',{fieldtype: 'file'}).show();
