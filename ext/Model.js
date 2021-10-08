@@ -157,8 +157,7 @@ Ext.define('Plugin.forms.ModelResult', {
         },
         {
             name: 'date', 
-            type: 'date', 
-            dateFormat: 'timestamp'
+            type: 'string', 
         },       
     ],
     proxy: {

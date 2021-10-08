@@ -57,9 +57,9 @@ Ext.define('Plugin.forms.ListResult', {
                     width: 50
                 },
                 {
-                    text: _('Дата'),
+                    text: _('Дата заполнения'),
                     dataIndex: 'date',
-                    width: 150
+                    width: 130
                 },
                 {
                     text: Config.Lang.title,
