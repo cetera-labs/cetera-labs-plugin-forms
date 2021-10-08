@@ -34,7 +34,7 @@ class Result extends \Cetera\DbObject {
 
     public static function getListById($id)
     {
-        $data = self::getDbConnection()->fetchAll('SELECT * FROM '. static::getTable() . ' WHERE id IN (SELECT result_id as id FROM forms_results_map WHERE form_id=?) ORDER BY id',array((int)$id));
+        $data = self::getDbConnection()->fetchAll('SELECT * FROM '. static::getTable() . ' WHERE id IN (SELECT result_id as id FROM forms_results_map WHERE form_id=?) ORDER BY id DESC',array((int)$id));
 
         $res = array();
         foreach ($data as  $d)
@@ -45,6 +45,9 @@ class Result extends \Cetera\DbObject {
 
     public function saveResult($formId)
     {
+        if (!$this->id) {
+            $this->fields['date'] = date('Y-m-d H:i:s');
+        }
         parent::save();
 
         self::saveMap($this->id, $formId);

@@ -438,52 +438,12 @@ Ext.define('Plugin.forms.Edit', {
 							]
                         },{
                             title: _('Результаты'),
-                            autoScroll: true,
-                            defaultType: 'textfield',
-                            layout: 'form',
-                            defaults: {
-                                labelAlign: 'top'
-                            },
+                            layout: 'fit',
                             items: [
                                 {
                                     xtype: 'formresult',
                                     name: 'formresultfield',
-                                    columns: [{
-                                        text: 'ID',
-                                        dataIndex: 'id',
-                                        width: 50
-                                    },{
-                                        text: Config.Lang.title,
-                                        dataIndex: 'text',
-                                        flex: 1
-                                    }],
-                                    store: Ext.create('Ext.data.JsonStore', {
-                                        autoLoad: true,
-                                        autoDestroy: true,
-                                        remoteSort: true,
-                                        model: Plugin.forms.ModelResult,
-                                        fields: [
-                                            {
-                                                name: 'text',
-                                                type: 'string'
-                                            }
-                                        ],
-                                        proxy: {
-                                            type: 'ajax',
-                                            api: {
-                                                read: '/cms/plugins/forms/scripts/data.php?action=results',
-                                                update: '/cms/plugins/forms/scripts/data.php?action=updateResult',
-                                                destroy: '/cms/plugins/forms/scripts/data.php?action=destroyResult'
-                                            },
-                                            reader: {
-                                                type: 'json',
-                                                root: 'rows'
-                                            },
-                                             extraParams: {
-                                                'formId': this.record.getId()
-                                             }
-                                        }
-                                    })
+                                    formId: this.record.getId()
                                 }
                             ]
                         }

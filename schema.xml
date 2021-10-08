@@ -61,6 +61,7 @@
 <table name="forms_results">
     <field name="id" type="int(10) unsigned" null="0" auto_increment="1" />
     <field name="text" type="text" null="1" />
+    <field name="date" type="datetime" null="0" />
 
     <key name="PRIMARY" unique="1">
         <column name="id" />

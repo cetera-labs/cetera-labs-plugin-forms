@@ -154,7 +154,12 @@ Ext.define('Plugin.forms.ModelResult', {
         {
             name: 'text',
             type: 'string'
-        }
+        },
+        {
+            name: 'date', 
+            type: 'date', 
+            dateFormat: 'timestamp'
+        },       
     ],
     proxy: {
         type: 'ajax',

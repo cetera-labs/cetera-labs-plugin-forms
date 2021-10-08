@@ -49,6 +49,46 @@ Ext.define('Plugin.forms.ListResult', {
         });
 
         Ext.apply(this, {
+            
+            columns: [
+                {
+                    text: 'ID',
+                    dataIndex: 'id',
+                    width: 50
+                },
+                {
+                    text: _('Дата'),
+                    dataIndex: 'date',
+                    width: 150
+                },
+                {
+                    text: Config.Lang.title,
+                    dataIndex: 'text',
+                    flex: 1
+                }
+            ],
+
+            store: Ext.create('Ext.data.JsonStore', {
+                autoLoad: true,
+                autoDestroy: true,
+                remoteSort: true,
+                model: Plugin.forms.ModelResult,
+                proxy: {
+                    type: 'ajax',
+                    api: {
+                        read: '/cms/plugins/forms/scripts/data.php?action=results',
+                        update: '/cms/plugins/forms/scripts/data.php?action=updateResult',
+                        destroy: '/cms/plugins/forms/scripts/data.php?action=destroyResult'
+                    },
+                    reader: {
+                        type: 'json',
+                        root: 'rows'
+                    },
+                    extraParams: {
+                        'formId': this.formId
+                    }
+                }
+            }),            
 
             dockedItems: [{
                 xtype: 'toolbar',
