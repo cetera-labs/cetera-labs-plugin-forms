@@ -1,6 +1,6 @@
 {
     "name": "cetera-labs/plugin-forms",
-    "description": "Cetera CMS Web form builder Plugin",
+    "description": "Fastsite CMS Web form builder Plugin",
     "type": "cetera-cms-plugin",
     "license": "MIT",
     "authors": [
